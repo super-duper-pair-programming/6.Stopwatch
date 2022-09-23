@@ -69,7 +69,6 @@ const stopTimer = () => {
 
 const resetTimer = () => {
   clearInterval(timerState.timerId);
-
   setTimerState({ displayTime: '00:00:00', lapNum: 1 });
   resetLapRender();
   setBtnState({ isResetLapBtnDisabled: true });
@@ -85,3 +84,7 @@ $reset.addEventListener('click', () => {
   if (buttonState.resetLapBtn === 'Lap') lapRender();
   else resetTimer();
 });
+
+// [변경사항]
+// - 버튼의 상태와 타이머의 상태를 모두 별도의 상태로 관리
+// - event listener 안의 코드들을 역할에 따라 함수로 분리

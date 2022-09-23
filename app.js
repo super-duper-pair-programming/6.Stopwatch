@@ -51,12 +51,3 @@ $reset.addEventListener('click', e => {
     $reset.disabled = true;
   }
 });
-
-// const startTime = new Date();
-
-// startTime.setMinutes(0, 0, 0);
-// console.log(startTime.getMinutes());
-// console.log(startTime.getSeconds());
-// console.log(startTime.getMilliseconds());
-
-// setInterval(() => console.log(new Date().getTime()), 100);
